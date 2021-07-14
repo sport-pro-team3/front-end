@@ -1,0 +1,18 @@
+.main {
+  padding: 0 100px 200px 200px;
+}
+
+.main__title {
+  color: #020712;
+  font-weight: 900;
+  font-family: Oswald, sans-serif;
+  font-size: 36px;
+  padding-bottom: 16px;
+}
+
+.sports__title {
+  font-weight: 900;
+  font-size: 56px;
+  color: #ed2840;
+  padding-bottom: 60px;
+}

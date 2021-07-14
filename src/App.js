@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import { Intro } from "./components/intro/Intro";
+import {
+  Rating,
+  Competitions,
+  News,
+  About,
+  Contacts,
+  Boxing,
+  Ushu,
+  Wrestling,
+} from "./pages";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/boxing" component={Boxing} />
+          <Route path="/ushu" component={Ushu} />
+          <Route path="/wrestling" component={Wrestling} />
+          <Route path="/rating" component={Rating} />
+          <Route path="/competitions" component={Competitions} />
+          <Route path="/news" component={News} />
+          <Route path="/about" component={About} />
+          <Route path="/contacts" component={Contacts} />
+          <Intro />
+        </Switch>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
