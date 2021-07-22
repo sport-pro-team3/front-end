@@ -87,3 +87,7 @@
     transform: none;
   }
 }
+
+.form__input {
+  outline: none;
+}

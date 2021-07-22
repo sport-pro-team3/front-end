@@ -1,6 +1,18 @@
 import "./Main.css";
+import axios from "axios";
+import { useEffect } from 'react';
 
 export const MainPart = () => {
+
+ c
+
+  useEffect(() => {
+    axios
+      .get(`https://sportpro3.herokuapp.com/api/news/`)
+      .then((response) => setData(response.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <>
       <div className="main">

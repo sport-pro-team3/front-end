@@ -1,5 +1,5 @@
 .pages__container {
-  padding: 0 100px;
+  padding: 0 200px;
 }
 
 .about__container {
@@ -104,4 +104,33 @@
 .news__source {
   margin-top: 20px;
   color: #000;
+}
+
+.contacts {
+  padding: 100px 100px 300px 100px;
+}
+
+.contacts__inner {
+  padding: 0 0 0 100px;
+}
+
+.contacts__title {
+  color: #ed2840;
+}
+
+.contatcts__info {
+  margin-top: 35px;
+  font-size: 43px;
+}
+
+.competitions {
+  padding: 100px 100px 300px 100px;
+}
+
+.competitions__inner {
+  padding-left: 100px;
+}
+
+.competitions__title {
+  color: #ed2840;
 }

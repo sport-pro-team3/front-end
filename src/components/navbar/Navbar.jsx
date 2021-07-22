@@ -4,6 +4,15 @@ import arrow from "../../icons/arrow.svg";
 
 import "./Navbar.css";
 
+export const Form = () => {
+  return (
+    <form>
+      <input type="text" className="form__input" />
+      <button>Search</button>
+    </form>
+  );
+};
+
 const Navbar = () => {
   const navStyle = {
     color: "#fff",
@@ -14,7 +23,9 @@ const Navbar = () => {
     <ul className="nav__links">
       {/* CLASS MENU */}
       <li style={navStyle}>
-        <a href=" #">Федерации</a>
+        <a href=" #" style={navStyle}>
+          Федерации
+        </a>
         <ul className="submenu">
           <li>
             <a href=" #" className="submenu__sportarts">
@@ -343,23 +354,24 @@ const Navbar = () => {
         </ul>
       </li>
       {/* ---------- BUTTONS ---------- */}
-      <Link to="/rating">
+      <Link to="/rating" style={navStyle}>
         <li>Рейтинг КР</li>
       </Link>
-      <Link to="/competitions">
+      <Link to="/competitions" style={navStyle}>
         <li>Соревнования</li>
       </Link>
-      <Link to="/news">
+      <Link to="/news" style={navStyle}>
         <li>Новости</li>
       </Link>
-      <Link to="/about">
+      <Link to="/about" style={navStyle}>
         <li>О нас</li>
       </Link>
-      <Link to="/contacts">
+      <Link to="/contacts" style={navStyle}>
         <li>Контакты</li>
       </Link>
       {/* ---------- SEARCH ---------- */}
-      <p>search</p>
+
+      <Form></Form>
     </ul>
   );
 };
