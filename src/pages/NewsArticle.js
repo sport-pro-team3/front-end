@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NewsArticle({ data }) {
   return (
@@ -10,9 +11,7 @@ function NewsArticle({ data }) {
           <span className="news__author">{data.sport.title}</span> <br />
         </div>
         <h1 className="news_title">{data.text}</h1>
-        <a href={data.url} className="news__source">
-          Подробнее...
-        </a>
+        <Link to={`/news/${data.user.toString()}`}>Подробнее...</Link>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function Header() {
   return (
     /* --------------- HEADER --------------- */
     <nav className="header">
-      <Link to="/" className="header__logo">
+      <Link path="/" exact to="/" className="header__logo">
         <img src={logo} alt="logo"></img>
       </Link>
       {/* ---------- NAVBAR ---------- */}
