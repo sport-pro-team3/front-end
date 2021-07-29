@@ -43,6 +43,10 @@
   margin-right: 10px;
 }
 
+.Contacts__email {
+  font-family: "Lato", sans-serif;
+}
+
 .footer__nav {
   display: flex;
   align-items: center;
