@@ -2,8 +2,8 @@
   padding: 0 100px 200px 200px;
 }
 
-.main__title {
-  color: #020712;
+.main__sportarts__title {
+  color: #898989;
   font-weight: 900;
   font-family: Oswald, sans-serif;
   font-size: 36px;
@@ -15,4 +15,95 @@
   font-size: 56px;
   color: #ed2840;
   padding-bottom: 60px;
+}
+
+.main__info {
+  display: flex;
+  max-width: 250px;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.main__image {
+  min-width: 235px;
+  min-height: 185px;
+  max-width: 235px;
+  max-height: 185px;
+}
+
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main__cards {
+  display: flex;
+}
+
+.info__cards {
+  display: flex;
+}
+
+.main__infos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__info {
+  margin: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.main__title {
+  padding: 10px 0 10px 16px;
+  font-size: 18px;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+}
+
+.main_description {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 0 20px 16px;
+}
+
+.info_up {
+  display: flex;
+  justify-content: center;
+}
+
+.info__title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  position: absolute;
+  width: 70%;
+  background-color: #fff;
+  padding: 50px;
+}
+.info__item {
+  padding: 100px;
+}
+
+.info__image {
+  width: 100%;
+  max-height: 500px;
+}
+.about__sport {
+  font-family: Oswald, sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ed2840;
+}
+.info__text {
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
 }
