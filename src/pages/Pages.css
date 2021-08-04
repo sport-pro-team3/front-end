@@ -1,6 +1,10 @@
+/*--------- CONTAINER ----------*/
+
 .pages__container {
   padding: 0 200px;
 }
+
+/*--------- ABOUT US ----------*/
 
 .about__container {
   display: flex;
@@ -22,6 +26,8 @@
   width: 40%;
   padding: 0 0 150px 0;
 }
+
+/*--------- NEWS ----------*/
 
 .news__main {
   padding: 50px 100px 200px 200px;
@@ -55,9 +61,14 @@
 
 .news {
   display: flex;
-  max-width: 500px;
+  max-width: 450px;
+  max-height: 200px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  margin: 12px 24px;
+}
+.news:first-child {
+  margin-left: 0;
 }
 
 .news__up {
@@ -74,6 +85,9 @@
 .news_title {
   font-size: 18px;
   font-family: Oswald, sans-serif;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news__desc {
@@ -88,23 +102,75 @@
   max-width: 300px;
   margin-left: 20px;
   color: #ed2840;
+  font-size: 12px;
 }
 
 .news__image {
   min-width: 200px;
-  max-height: 260px;
+  max-height: 265px;
 }
 
 .news__published {
   display: inline-block;
   color: #898989;
   font-family: Lato;
+  font-size: 12px;
 }
 
 .news__source {
   margin-top: 20px;
   color: #000;
 }
+
+.spinner__element {
+  padding: 200px;
+}
+
+.news__articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.css-g1d714-ValueContainer {
+  width: 400px;
+}
+
+/*--------- NEWS ITEM ----------*/
+
+.news__item {
+  padding: 60px 0 200px 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.items__title {
+  color: #ed2840;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.items__date {
+  font-size: 16px;
+}
+
+.items__image {
+  max-width: 800px;
+  max-height: 520px;
+  align-items: center;
+}
+
+.back__link {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.items__text {
+  margin: 40px;
+}
+
+/*--------- CONTACTS ----------*/
 
 .contacts {
   padding: 100px 100px 300px 100px;
@@ -123,18 +189,24 @@
   font-size: 43px;
 }
 
-.competitions {
-  padding: 100px 100px 300px 100px;
+/*--------- PAGINATION ----------*/
+
+.pagination {
+  padding: 40px 0 0 300px;
 }
 
-.competitions__inner {
-  padding-left: 100px;
+.pagination__button {
+  box-shadow: 4px 2px 5px #898989;
+  padding: 7px 14px;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #848484;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.competitions__title {
-  color: #ed2840;
-}
-
-.news__item {
-  padding: 200px;
+.pagination__button:hover {
+  color: #000;
 }

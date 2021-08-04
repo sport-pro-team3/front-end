@@ -1,6 +1,5 @@
 export * from "./About";
-export * from "./Competitions";
-export * from "./News";
+
 export * from "./Contacts";
 export * from "./Rating";
 export * from "./Boxing";
