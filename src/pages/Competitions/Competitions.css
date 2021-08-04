@@ -1,0 +1,121 @@
+/*--------- COMPETITIONS ----------*/
+
+.competitions {
+  padding: 100px 100px 300px 100px;
+}
+
+.competitions__inner {
+  padding-left: 100px;
+}
+
+.competitions__title {
+  color: #ed2840;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.competitions__filter {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.css-2b097c-container {
+  width: 400px;
+}
+
+.competitions__filter__subtitle {
+  font-size: 26px;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+}
+.filter__text {
+  padding: 15px 0;
+}
+
+.competitions__component {
+  display: flex;
+  justify-content: space-between;
+}
+
+.competitions__info {
+  padding-top: 40px;
+}
+
+.competitions__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.competitions__cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+.competitions__cards:first-child {
+  padding-left: 0;
+}
+
+.competitions__cards__inner {
+  max-height: 450px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #000;
+}
+.competitions__cards__inner:hover {
+  color: #000;
+}
+
+.competitions__cards__text {
+  padding: 20px 17px;
+}
+
+.competitions__image {
+  max-width: 520px;
+  max-height: 230px;
+}
+
+.competitions__card__title {
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.competiitons__place {
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+}
+
+.competitions__date {
+  display: flex;
+  max-width: 180px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.competitions__dates {
+  padding: 0 15px;
+}
+
+.competitions__dates:first-child {
+  padding-left: 0;
+}
+
+.date__dots {
+  width: 10px;
+  height: 10px;
+  background-color: #ed2840;
+  border-radius: 50%;
+}
+
+.competitions__status {
+  max-width: 320px;
+  border-top: 2px solid #c2c2c2;
+  padding: 18px 0;
+  font-size: 18px;
+  color: #ed2840;
+  text-transform: uppercase;
+  font-weight: 600;
+}
