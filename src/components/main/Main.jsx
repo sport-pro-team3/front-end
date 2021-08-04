@@ -1,39 +1,48 @@
 import "./Main.css";
+import NationalSport from "./NationalSport";
+import OlympicSport from "./OlympicSport";
+import NotOlympicSport from "./NotOlympicSport";
+import ParaSport from "./ParaSport";
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import MainComponent from "./MainComponent";
 
 export const MainPart = () => {
+  const [mainCards, setMainCards] = useState([]);
+
   useEffect(() => {
-    fetchAPI();
+    const fetchMain = async () => {
+      const response = await axios
+        .get("https://sportpro3.herokuapp.com/api/sports/Sports/")
+        .catch((err) => console.log(err));
+      console.log(response);
+      setMainCards(response.data);
+    };
+
+    fetchMain();
   }, []);
 
-  const [items, setItems] = useState([]);
-
-  const fetchAPI = async () => {
-    const data = await fetch(
-      "https://sportpro3.herokuapp.com/api/sports/Sports/"
-    );
-
-    const items = await data.json();
-
-    setItems(items);
-  };
+  console.log(mainCards);
 
   return (
     <>
       <div className="main">
-        <div className="main__title">Виды спорта</div>
-        <div className="sports__title">Национальные виды спорта</div>
-        {items.map((item) => (
-          <>
-            <img src={item.image} alt="" />
-            <h2>{item.title}</h2>
-          </>
-        ))}
-        <div className="sports__title">Олимпийские виды спорта</div>
-        <div className="sports__title">Неолимпийские виды спорта</div>
-        <div className="sports__title">Виды спортов Пара и Сурдо (ЛОВЗ)</div>
+        <div className="main__container">
+          <div className="main__sportarts__title">Виды спорта</div>
+          <div className="sports__title">Национальные виды спорта</div>
+
+          <NationalSport mainCards={mainCards} />
+          <div className="main__cards">
+            <MainComponent mainCards={mainCards} />
+          </div>
+          <div className="sports__title">Олимпийские виды спорта</div>
+          <OlympicSport />
+          <div className="sports__title">Неолимпийские виды спорта</div>
+          <NotOlympicSport />
+          <div className="sports__title">Виды спортов Пара и Сурдо (ЛОВЗ)</div>
+          <ParaSport />
+        </div>
       </div>
     </>
   );
