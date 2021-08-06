@@ -32,12 +32,12 @@ export const MainPart = () => {
           <div className="main__sportarts__title">Виды спорта</div>
           <div className="sports__title">Национальные виды спорта</div>
 
-          <NationalSport mainCards={mainCards} />
           <div className="main__cards">
             <MainComponent mainCards={mainCards} />
           </div>
           <div className="sports__title">Олимпийские виды спорта</div>
           <OlympicSport />
+          <NationalSport mainCards={mainCards} />
           <div className="sports__title">Неолимпийские виды спорта</div>
           <NotOlympicSport />
           <div className="sports__title">Виды спортов Пара и Сурдо (ЛОВЗ)</div>
