@@ -15,6 +15,7 @@ export const Competitions = () => {
         .catch((err) => console.log(err));
       setCompetitions(response.data);
       setLoading(false);
+      console.log(response);
     };
     fetchNews();
   }, []);
@@ -30,7 +31,7 @@ export const Competitions = () => {
             </div>
 
             <div className="competitions__filter__subtitle">
-              <p className="filter__text"> Олимпийские виды спорта</p>{" "}
+              <p className="filter__text"> Олимпийские виды спорта</p>
               <Filter />
             </div>
           </div>
