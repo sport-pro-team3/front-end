@@ -35,7 +35,6 @@
 
 .competitions__component {
   display: flex;
-  justify-content: space-between;
 }
 
 .competitions__info {
@@ -118,4 +117,42 @@
   color: #ed2840;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.reglament__inner {
+  padding: 50px 0 200px 100px;
+}
+
+.reglament__title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #ed2840;
+}
+
+.reglament__buttons {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.reglament__buttons__links {
+  font-size: 16px;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ed2840;
+}
+
+.reglament__pdf {
+  min-width: 500px;
+  max-width: 70%;
+  max-height: 700px;
+  min-height: 500px;
+  height: 100%;
+  overflow: auto;
 }
