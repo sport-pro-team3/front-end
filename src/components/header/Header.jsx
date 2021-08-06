@@ -10,7 +10,7 @@ function Header() {
     /* --------------- HEADER --------------- */
     <nav className="header">
       <Link path="/" exact={true} to="/" className="header__logo">
-        <img src={logo} alt="logo"></img>
+        <img src={logo} alt="logo" className="header__logotype"></img>
       </Link>
       {/* ---------- NAVBAR ---------- */}
       <Navbar id="navbar"></Navbar>
